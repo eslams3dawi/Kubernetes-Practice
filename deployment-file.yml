@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment # Create a deployment to manage the pod
+metadata:
+  name: webserver
+spec: # Sepcify the deployment specification
+  replicas: 7
+  selector:
+    matchLabels:
+      app: web
+  template: # Sepcificy the pod template for the deployment
+    metadata:
+      labels:
+        app: web
+    spec: # Sepcify the pod specification
+      containers:
+        - name: web-container
+          image: nginx:latest
+          ports:
+            - containerPort: 80
