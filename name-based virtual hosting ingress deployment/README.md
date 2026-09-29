@@ -126,7 +126,3 @@ zamalek.k8s  → Ingress → zamalek Service → Apache
 ### 👨‍💻 Author
 
 **Eslam Seadawi**
-
-Computer Science | Backend & DevOps Enthusiast
-
-[GitHub](https://github.com/eslams3dawi)
